@@ -12,8 +12,13 @@ public class StudentService {
     public StudentService(StudentRepository studentRepository){
         this.studentRepository = studentRepository;
     }
+
     public List<Student> getStudent(){
 
         return studentRepository.findAll();
+    }
+
+    public void addNewStudent(Student student) {
+        System.out.println(student);
     }
 }
